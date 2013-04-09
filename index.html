@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Test The Web Forward</title>
+
+		<meta name="author" content="Rebecca Hauck">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <!-- <link rel="stylesheet" href="css/reset.css">-->
+	    <link rel="stylesheet" href="css/reveal.css">
+	    <link rel="stylesheet" href="css/theme/testtwf.css" id="theme">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		
+		<script type="text/javascript" src="js/prefixfree.js" defer></script>
+        <script type="text/javascript" src="js/jquery-1.8.3.min.js" defer></script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+			    
+			    <section data-state="home-page" class="home">
+                    <h1>Test the Web Forward</h1>
+    			    <div style="margin-top: 40%">
+    			        <h3>Better tests for a better web</h3>
+    			        <h5>SF HTML5 Meetup - April 25, 2013</h5>
+    			    </div>
+    			    
+    			</section>
+                <section class="home"> <!-- style="width:1200px;margin-left:-150px;">-->
+                    <h2>About me</h2>
+
+                     <div  style="display:inline-block; margin-left: 50px">
+                        <div class="business-card"> 
+                            <p class="name">Rebecca Hauck</p>
+                            <p class="title">Computer Scientist</p>
+                            <p class="team">Web Platform</p>
+
+                            <p class="contact-info">
+                                <a href="http://twitter.com/rebeccahauck">@rebeccahauck</a>
+                                <a href="http://testthewebforward.org/">http://testthewebforward.org/</a>
+                            </p>
+                            
+                        </div></div>
+                        <div style="display:inline-block">
+                            <img class="head-shot" style="margin-left: -200px;z-index: 100;transform:translate(30px, 280px) rotateZ(12deg)" src="assets/images/rebecca_hauck_375x400.jpg" width="200" height="215" />
+                    </div>
+                </section>
+                
+				<section data-state="tim-berners-lee">
+    				<div class="fragment roll-in tbl-quote">
+    				    <h3>
+                        "If I had taken a proprietary<br>
+                        control of the Web, then it would <br>
+                        never have taken off. People only <br> 
+                        committed their time to it because <br> 
+                        they knew it was open, shared: <br>
+                        that they could help decide what<br>
+                         would happen to it next..."
+                        </h3>
+                        <h4>—Tim Berners-Lee</h4>
+                        
+                    </div>
+				</section>
+				
+            	<section data-state="community" class="web-definition white">
+					<div class="fragment inverted vignetted">
+					    <h2 class="white">The web is defined by the community</h2>
+				    </div>
+				</section>
+				
+				<section data-state="starburst-page">
+				    <div class="fragment fade-out" style="top: -5%; position: absolute;">
+					    <h2>Standards are the root of communication<h2>
+					</div>
+					<div class="fragment" style="top: -5%; position: absolute;">
+					    <h2>Standards bring people together</h2>
+					</div>
+					<img src='assets/images/morse_telegraph.jpeg' class="telegraph"/>
+					<img src='assets/images/International_Morse_Code.svg' class="telegraph" 
+					     style="-webkit-transform: translate(240px, -220px) rotate(-19deg)"/>
+				</section>
+
+				<section class="standard-definition">
+					<h2>But what exactly is a standard?</h2>
+					<div style="width: 100%">
+					<ul>
+					    <li class="fragment roll-in">Defines how something should work</li>
+					    <li class="fragment roll-in">Based on the consensus of the community</li>
+					    <li class="fragment roll-in">It's theoretically possible to implement</li>
+					    <li class="fragment roll-in">Can actually be implemented more than once</li>
+					    <li class="fragment roll-in">Implementations pass a common test suite</li>
+					</ul>
+				    </div>
+				</section>
+				
+				<section data-state="standard">
+				    
+				    <h2 class="standard-header">How do standards come to be?</h2>
+					
+					<div class="fragment">
+					    <div id="spec-diagram">
+    					    <div id="spec-draft" class="spec">
+    					        <h4>Draft</h4> 
+    					    </div>
+    					    <div class="fragment fade-out inverted phase">
+    					        <ul>
+    					            <li>A work in progress</li>
+    					            <li>Multiple (many) updates</li>
+    					            <li>Prototyping &amp; early implementation begins</li>
+    					            <li>Advances on <b>consensus</b></li>
+    					            <li> <span style="color: orange; font-weight: bold">Tests are needed </span> for proof of concept and resolution on details</li>
+    					        </ul>
+    				        </div>
+    				    </div>
+    				    <div class="fragment">
+    					    <div id="spec-cr" class="spec"> 
+    					        <h4 style="margin-top: 5%;">Candidate Recommendation</h4>
+    					    </div>
+    					    <div class="fragment fade-out inverted phase">
+    					        <ul>
+    					            <li>More firm than a draft</li>
+    					            <li>Working group believes the spec has everything it needs</li>
+    					            <li>Implementations are needed to validate the spec</li>
+    					            <li> <span style="color: orange; font-weight: bold">Tests are needed </span>for implementations to be interoperable from the start</li>
+    					        </ul>
+    				        </div>
+    					</div>
+    					<div class="fragment">
+    					    <div id="spec-rec" class="spec"> 
+    					        <h4 style="color: #28B928; text-shadow: 0 0 5px #000;">Recommendation</h4>
+    					    </div>
+    					    <div class="inverted phase">
+        					    <ul>
+    					            <li>Final official version</li>
+    					            <li>Reached when there are two or more implementations</li>
+    					            <li>All implementations pass the same suite of <span style="color: orange; font-weight: bold">tests</span></li>
+    					            <li>Future implementations also prove conformance using common <span style="color: orange; font-weight: bold"> test suite</span></li>
+    					        </ul>
+        				    </div>
+        				</div>
+    				</div>
+				</section>
+				
+				<section data-state="coverage-report" class="coverage">
+				    <div class="fragment inverted vignetted">
+					    <h2>15000+ more tests needed</h2>
+					    <h2 class="fragment">6000 tests needing review</h2>
+				    </div>
+				</section>
+				
+				<section data-state="sir-edmund-hillary">
+				    <div class="hillary-header">
+				        <h1>How do we get there??</h1>
+				    </div>
+				</section>
+				
+				<section data-state="starburst-page" id="starburst-off"> 
+				    <div id="populate" class="fragment"></div>
+				    <img id="webimg" src="assets/images/web.png">
+				    <div class="more">
+				        <h3 style="margin-top: 5%" class="fragment grow">More people</h3>
+				        <h2 style="margin-top: 5%" class="fragment grow">More tests</h2>
+				        <h1 style="margin-top: 5%" class="fragment grow">Better Web!</h1>
+				    </div>
+				</section>
+				
+				<section data-state="movement" class="movement">
+				    <h3 style="margin-top: 5%">A movement is bor<span style="letter-spacing: .01em;">n...</span></h3>
+				    <h2 class="fragment grow">Test the Web Forward!</h2>
+				    <li class="fragment swipe-left">First event: June 2012, San Francisco</li>
+				    <li class="fragment swipe-left">2012-2013: Beijing, Paris, Sydney, Seattle</li>
+				    <li class="fragment swipe-up">Upcoming: Tokyo, Shanghai, Shenzhen</li>
+				    <li class="fragment roll-in">More coming soon!</li>
+				</section>
+				<section data-state="club">
+    				<h1 class="happens white">So what happens at these events?</h1>
+    			</section>
+    			<section>
+    			    <section data-state="learning">
+    			        <div class="inverted vignetted" style="margin-left: 23%; width: 50%">
+    				        <h1 class="happens white">Learning</h1>
+    				    </div>
+    			    </section>
+    			    <section data-state="learning-examples">
+    			        <div id="learning-example-1">
+    			            Kris Krueger, HTML5 Test Facilitator
+    			            <br>
+    			            <img src="assets/images/kris-krueger.jpg" class="scrapbook">
+    			        </div>
+    			        <div id="learning-example-2">
+			                <img src="assets/images/robin-berjon.jpg" class="scrapbook">
+			                <br>Robin Berjon, HTML5 Spec Editor
+			            </div>
+			            <div id="learning-example-3">
+			                <img src="assets/images/fantasai.jpg" class="scrapbook">
+			                <br>Elika Etemad, CSS Flexbox Spec Editor
+			            </div>
+    			        <div id="talk-topics" class="topics">
+    			            <h3>Learn from the experts</h3>
+    			            <ul>
+    			                <li>How to Read a W3C Spec</li>
+    			                <li>Testing with testharness.js</li>
+    			                <li>How to Write a W3C Reftest</li>
+    			                <li>Filing the Best Bugs</li>
+    			                <li>The CSS Testing Framework</li>
+    			                <li>The current testing status of your favorite spec!</li>
+    			                
+    			            </ul>
+    			        </div>
+    			    </section>
+    			</section>
+    			<section>
+    			    <section data-state="hacking">
+    			        <div class="inverted vignetted" style="margin-left: 23%; width: 50%">
+    				        <h1 class="happens white">Hacking</h1>
+    				    </div>
+    			    </section>
+    			    <section>
+    			        <div id="hacking-1">
+    			            <img src="assets/images/paris-hacking.jpg" class="scrapbook">
+    			        </div>
+    			        <div id="hacking-2">
+			                <img src="assets/images/beijing-hacking.jpg" class="scrapbook">
+			            </div>
+			            <div id="hacking-3">
+			                <img src="assets/images/sf-hacking.jpg" class="scrapbook">
+			            </div>
+    			        <div id="talk-topics" class="topics">
+    			            <h3>Specs</h3>
+    			            <ul>
+    			                <li>HTML5</li>
+    			                <li>CSS Transforms</li>
+    			                <li>CSS Backgrounds &amp; Borders</li>
+    			                <li>CSS Values &amp; Units</li>
+    			                <li>IndexedDB</li>
+    			                <li>CSSOM</li>
+    			                <li>Dom Events</li>
+    			            </ul>
+    			        </div>
+    			    </section>
+    			</section>
+    			<section data-state="contributing">
+    			    <h1>Contributing</h1>
+    				<div class="results topics">
+    				    <ul>
+    				        <li class="fragment swipe-up">Over 700 new tests added</li>
+    				        <li class="fragment swipe-up">Interoperability bugs found at each event</li>
+    				        <li class="fragment swipe-up">Several spec bugs also found</li>
+    				        <li class="fragment swipe-up">Side hacking on test infrastructure</li>
+    				        <li class="fragment swipe-up">Tutorials &amp; documentation</li>
+    				    </ul>
+    				</div>
+    			</section>
+    			<section data-state="building-community" class="building-community">
+    				<div id="building-community-title" class="fragment grow">
+    				    <h1>Building <br> Community</h1>
+    				</div>
+    				<img src="assets/images/beijing-community-1.jpg" id="beijing-community-1" class="scrapbook">
+    				<img src="assets/images/sf-community-1.png" id="sf-community-1" class="scrapbook">
+    				<img src="assets/images/sf-community-2.png" id="sf-community-2" class="scrapbook">
+                    <img src="assets/images/beijing-community-2.jpg" id="beijing-community-2" class="scrapbook">
+                    <img src="assets/images/paris-community-1.jpg" id="paris-community-1" class="scrapbook">
+                    <img src="assets/images/paris-community-2.jpg" id="paris-community-2" class="scrapbook">
+                   
+    			</section>
+    			
+    			<section data-state="building-better-web">
+    			    <div class="fragment grow">
+    				    <h1 class="happens white">Building a <br>Better Web!</h1>
+    				</div>
+    			</section>
+
+    	        <section data-state="ttwfvideo" class="playbutton">
+			        <!-- TODO: Add code to return to slide deck when video completes -->
+                    <div style="margin-top:15%">
+                    <a href="http://www.youtube.com/embed/0wwHl3OKyFU?autoplay=1&amp;autohide=1&amp;showinfo=0">
+                       <img src="assets/images/play-button.svg"/></a>
+                    </div>
+                </section>
+                
+               	<section data-state="testtwf-close" class="testtwf-close">
+				    <h3>Visit</h3>
+				    <a href="http://testthewebforward.org/">http://testthewebforward.org</a>
+				    <h3>Follow</h3>
+				    <a href="https://twitter.com/testthewebfwd">@testthewebforward</a>
+				    <h3>Subscribe</h3>
+				    <a href="http://lists.w3.org/Archives/Public/public-testtwf">public-testtwf@w3.org</a>
+				</section>
+    			
+    			
+    			<section class="colophon">
+					<h3>Colophon</h3>
+					<ul >
+						<li><b>reveal.js</b><br /> by <a href="http://hakim.se">Hakim El Hattab</a></li>
+						<li><b>Font</b><br /> Source Sans Pro</li>
+					</ul>
+				</section>
+                
+                	<!--
+					<aside class="notes">
+						
+						Community: http://pitchfork.com/festivals/chicago/2012/
+
+						Testing: http://en.wikipedia.org/wiki/File:Tape_measure_colored.jpeg
+
+						Sir Edmund Hlliary:  http://www.flickr.com/photos/brewbooks/318391886/
+						
+						Standard:  http://www.flickr.com/photos/chmeredith/4560746937/
+						
+						Club party:  http://commons.wikimedia.org/wiki/File:Colombian_Party_Cartel._Photo_by_Ellen_Ord%C3%B3%C3%B1ez_for_Colombian_Party_Cartel.jpg
+						Binary code: http://commons.wikimedia.org/wiki/File:Binary_Code.jpg
+						
+						Jump for joy: http://www.psxextreme.com/ps3-wallpapers/910.html
+					</aside>
+				-->
+                
+                
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+            Reveal.addEventListener( 'slidechanged', function( event ) {
+                // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+            	var tmp ="";
+            } );
+            
+            Reveal.addEventListener( 'fragmentshown', function( event ) {
+                if(event.fragment.id == "populate")
+                {
+                    addContainer(event.target.offsetWidth, event.target.offsetHeight);
+                    buildCoordinates();
+                    setAcceleratingTimeout(populate, 200 );
+                }
+            } );
+            
+            
+            var coords = [];
+            function buildCoordinates() {
+                var lft = 0;
+                var tp = 0;
+                var container = "#container";
+                
+                webTop = $("#webimg").offset().top;
+                webLeft = $("#webimg").offset().left;
+                
+                while(tp < $(container).height()){
+                    
+                    if( !( (lft > webLeft-25 && lft < webLeft+500) &&
+                           (tp > webTop-50 && tp < webTop+500) ) 
+                        ) 
+                    {
+                        coords.push({ "left": lft, "top": tp });
+                    }
+                    
+                    lft += 25;
+                    if( lft > $(container).width() ) {
+                        lft = 0;
+                        tp += 50;
+                    }
+                }
+            }
+            
+            function addContainer(width, height) {
+                
+                var parent = "#starburst";
+                
+                width += 300;
+                height += 100;
+                lft = width * -0.25;
+                
+                $(parent).prepend(
+                    "<div id='container' " +
+                      " style =' display:block; " +
+                      " position: absolute; " +
+                      " width: " + width + "px;" +
+                      " height: " + height + "px;" +
+                      " left: " +lft + "px;" +
+                      " top:  -300px;" + 
+                      " z-index: -1;"+
+                      " border: 2px solid blue;'>" + 
+                      "</div>"
+                    );
+            }
+            
+            function populate() {
+                var container = "#container";
+                var imgsrc = "assets/images/blueman-small.png";
+                var id = "newimage" + rnd(1000000);
+                var idx = rnd(coords.length)
+                
+                if (coords[idx] != undefined)
+                {
+                    $(container).append(
+                        "<img id='" + id + "' src='" + imgsrc + 
+                        "' style='display:block; float:left; position:absolute; " +
+                        "z-index: inherit; " +
+                        "left:" + coords[idx]["left"] + "px;" +
+                        "top:"  + coords[idx]["top"] + "px'>");
+                }
+
+                $('#' + id).fadeIn();
+
+                coords.splice(idx,1);
+            }
+            
+            function rnd(max) { 
+    	        return Math.floor(Math.random()*(max+1));
+    	    }
+
+            function setAcceleratingTimeout( callback, factor)
+            {
+              var internalCallback = function( counter ){
+                  return function() {
+                      counter++;
+                      var timeout = factor - (counter+20);
+                      if(timeout < 10)
+                         timeout = 10;
+                         
+                      if(coords.length > 0)
+                      {
+                          window.setTimeout( internalCallback, timeout );
+                          callback();
+                      }
+                  }
+              }( 0 );
+              
+              window.setTimeout( internalCallback, factor );
+            };
+
+		</script>
+
+	</body>
+</html>

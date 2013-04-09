@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="240">
+    <defs>
+        <filter id="f1" x="0" y="0" width="200%" height="200%">
+          <feOffset result="offOut" in="SourceAlpha"/>
+          <feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+          <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+        </filter>
+        <radialGradient id="grad1" cx="25%" cy="75%" r="50%" fx="25%" fy="75%">
+          <stop offset="0%" style="stop-color:rgb(255,255,255); stop-opacity:.75" />
+          <stop offset="100%" style="stop-color: #CACACA; stop-opacity:1" />
+        </radialGradient>
+      </defs>
+    <rect width="300" height="240" rx="60" ry="60" fill="gray"/>
+    <path d = "M 80 40 L 80 200 L 250 120 L 80 40" fill="url(#grad1)" filter="url(#f1)"/>
+</svg>
