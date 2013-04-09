@@ -11,8 +11,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <!-- <link rel="stylesheet" href="css/reset.css">-->
-	    <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/reveal.css">
 	    <link rel="stylesheet" href="css/theme/testtwf.css" id="theme">
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 		
@@ -51,7 +50,8 @@
                             
                         </div></div>
                         <div style="display:inline-block">
-                            <img class="head-shot" style="margin-left: -200px;z-index: 100;transform:translate(30px, 280px) rotateZ(12deg)" src="assets/images/rebecca_hauck_375x400.jpg" width="200" height="215" />
+                            <img id="head-shot" src="assets/images/rebecca_hauck_375x400.jpg" width="200" height="215"/>
+                            <!-- style="margin-left: -200px;z-index: 100;transform:translate(30px, 280px) rotateZ(12deg)" -->
                     </div>
                 </section>
                 
@@ -85,8 +85,7 @@
 					    <h2>Standards bring people together</h2>
 					</div>
 					<img src='assets/images/morse_telegraph.jpeg' class="telegraph"/>
-					<img src='assets/images/International_Morse_Code.svg' class="telegraph" 
-					     style="-webkit-transform: translate(240px, -220px) rotate(-19deg)"/>
+					<img src='assets/images/International_Morse_Code.svg' class="morse"/>
 				</section>
 
 				<section class="standard-definition">
@@ -104,7 +103,7 @@
 				
 				<section data-state="standard">
 				    
-				    <h2 class="standard-header">How do standards come to be?</h2>
+				    <h2 class="standard-header">How do standards <br> come to be?</h2>
 					
 					<div class="fragment">
 					    <div id="spec-diagram">
@@ -244,6 +243,7 @@
     			                <li>IndexedDB</li>
     			                <li>CSSOM</li>
     			                <li>Dom Events</li>
+    			                <li>WebRTC</li>
     			            </ul>
     			        </div>
     			    </section>
@@ -282,7 +282,7 @@
     	        <section data-state="ttwfvideo" class="playbutton">
 			        <!-- TODO: Add code to return to slide deck when video completes -->
                     <div style="margin-top:15%">
-                    <a href="http://www.youtube.com/embed/0wwHl3OKyFU?autoplay=1&amp;autohide=1&amp;showinfo=0">
+                    <a target="top" href="http://www.youtube.com/embed/0wwHl3OKyFU?autoplay=1&amp;autohide=1&amp;showinfo=0">
                        <img src="assets/images/play-button.svg"/></a>
                     </div>
                 </section>
@@ -290,10 +290,12 @@
                	<section data-state="testtwf-close" class="testtwf-close">
 				    <h3>Visit</h3>
 				    <a href="http://testthewebforward.org/">http://testthewebforward.org</a>
-				    <h3>Follow</h3>
-				    <a href="https://twitter.com/testthewebfwd">@testthewebforward</a>
 				    <h3>Subscribe</h3>
 				    <a href="http://lists.w3.org/Archives/Public/public-testtwf">public-testtwf@w3.org</a>
+				    <h3>Follow</h3>
+				    <a href="https://twitter.com/testthewebfwd">@testthewebforward</a>
+				    <h3>Me</h3>
+				    <a href="https://twitter.com/rebeccahauck">@rebeccahauck</a>
 				</section>
     			
     			

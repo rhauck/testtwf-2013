@@ -72,15 +72,15 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-	-webkit-hyphens: auto;
-	   -moz-hyphens: auto;
-	        hyphens: auto;
+	-webkit-hyphens: none;
+	   -moz-hyphens: none;
+	        hyphens: none;
 
 	word-wrap: break-word;
 }
 
 .reveal .web-definition h2 {
-	font-family: "ChunkFive" georgia, serif;
+	font-family: "ChunkFive", georgia, serif;
 	letter-spacing: 0;
 }
 
@@ -1427,7 +1427,7 @@ body {
 .building-better-web .state-background {
 	background: url(../assets/images/jump_for_joy.jpg) #eee center center; 
 	background-size: cover;
-	opacity: .5;
+	opacity: .7;
 }
 
 .ttwfvideo .state-background {
@@ -1446,7 +1446,7 @@ body {
 }
 
 .reveal .testtwf-close a {
-	font-family: "Adelle" georgia, sans-serif;
+	font-family: "Adelle" georgia, serif;
 	font-weight: 500;
 }
 
@@ -1483,7 +1483,7 @@ body {
 }
 
 .reveal .standard-definition ul li {
-	font-family: "Adelle" georgia, san-serif;
+	font-family: "Adelle" georgia, serif;
 	margin-top: 15px;
 }
 
@@ -1566,7 +1566,7 @@ body {
 	opacity: .9;
 	position: absolute;
 	z-index: -1;
-	-webkit-transform: translate(-45%,  145%) rotate(3deg);
+	-webkit-transform: translate(-45%,  145%) rotate(0deg);
 	   -moz-transform: translate(-45%,  145%) rotate(3deg);
 	    -ms-transform: translate(-45%,  145%) rotate(3deg);
 		 -o-transform: translate(-45%,  145%) rotate(3deg);
@@ -1630,7 +1630,7 @@ body {
 }
 
 .reveal .topics ul li {
-	font-family: "Adelle" georgia, sans-serif;
+	font-family: "Adelle", georgia, serif;
 	font-size: .9em;
 	line-height: 2em;
 }
@@ -1660,7 +1660,7 @@ body {
 .phase {
 	
 	position: absolute;
-	top: 175%;
+	top: 285%;
 	left: 48%;
 	width: 555px;
 	height: 520px;
@@ -1697,21 +1697,21 @@ img.telegraph {
 	    -ms-transform: translate(-260px, 150px) rotate(23deg);
 		 -o-transform: translate(-260px, 150px) rotate(23deg);
 	        transform: translate(-260px, 150px) rotate(23deg);
+}
 
+img.morse {
+	box-shadow: 8px 8px 8px rgba(0,0,0,0.5),  2px 2px 3px rgba(200,200,170,1); 
+	-webkit-transform: translate(240px, -220px) rotate(-19deg);
+	   -moz-transform: translate(240px, -220px) rotate(-19deg);
+	    -ms-transform: translate(240px, -220px) rotate(-19deg);
+		 -o-transform: translate(240px, -220px) rotate(-19deg);
+	        transform: translate(240px, -220px) rotate(-19deg);
 }
 
 @-webkit-keyframes pan-around {
-	0% {
-		background-position: left top;
-	}
-	
-	50% {
-		background-position: center top;
-	}
-	
-	100% {
-		background-position: right top;
-	}
+	0%   { background-position: left top; }
+	50%  { background-position: center top; }
+	100% { background-position: right top; }
 }
 
 
@@ -1850,7 +1850,7 @@ img.telegraph {
     left: 1em;
 }
 
-.reveal img.head-shot 
+#head-shot
 {
 	  display: inline-block;
 	  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
@@ -1858,6 +1858,13 @@ img.telegraph {
 	  margin: 0;
 	  border: 10px solid white;
 	  filter: custom(url(../assets/shaders/flag.vs) url(../assets/shaders/shadows.fs), 20 20, phase 270, amplitude 80, txf rotateX(0deg)); 
+	  margin-left: -200px;
+	  z-index: 100;
+	  -webkit-transform: translate(30px, 280px) rotateZ(12deg);
+	     -moz-transform: translate(30px, 280px) rotateZ(12deg);
+	      -ms-transform: translate(30px, 280px) rotateZ(12deg);
+		   -o-transform: translate(30px, 280px) rotateZ(12deg);
+		      transform: translate(30px, 280px) rotateZ(12deg);
 }
 
 .reveal .business-card .contact-info 
@@ -1943,26 +1950,27 @@ img.telegraph {
 }
 
 .standard-header {
+	width: 100%;
 	position: absolute;
-	top: -50%;
+	top: -70%;
 }
 
 #spec-draft {
 	background-color: #DADADA;
-	top: 190%;
+	top: 270%;
 	left: -6%;
 }
 
 #spec-cr {
 	background-color: #A8A8A8;
-	top: 630%;
+	top: 710%;
 	left: -6%;
 }
 
 #spec-rec {
 	background-color: #585858;
 	color: #8CCE8F;
-	top: 1070%;
+	top: 1150%;
 	left: -6%;
 }
 
