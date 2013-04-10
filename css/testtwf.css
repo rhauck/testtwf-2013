@@ -1,0 +1,643 @@
+/*********************************************
+ *     Common - used on multiple slides
+ *********************************************/
+.inverted.vignetted {
+	color: #fff !important;
+	/*text-shadow: 2px 2px 3px rgba(0,0,0,1) !important; */
+
+	background: rgba(0, 0, 0, 0.8); 
+	box-shadow: 0px 8px 8px rgba(0,0,0,0.2), inset 2px 2px 3px rgba(0,0,0,0.05); 
+	border-radius: 8px; 
+	border: 1px solid rgba(255, 255, 255, 0.2); 
+
+	margin-left:-8px; margin-right:-8px;
+	padding-top: 20px;
+	text-align:center;
+	font-weight: 500 !important;
+	letter-spacing: 1em !important;
+}
+
+.happens {
+	letter-spacing: .01em;
+	text-shadow: 0 0 5px #000; 
+}
+
+.scrapbook {
+	border: 10px solid white;
+}
+
+.white {
+	color: #EBEBEB !important;
+}
+
+.reveal .topics h3 {
+	letter-spacing: 0;
+}
+
+.reveal .topics ul li {
+	font-family: "Adelle", georgia, serif;
+	font-size: .9em;
+	line-height: 2em;
+}
+
+.starburst-page .state-background {
+	background:  url(../assets/images/starburst.png) center center no-repeat;
+	background-size: cover;
+	opacity: .5;
+}
+
+/*********************************************
+ *      Home/Title
+ *********************************************/
+.home-page .state-background {
+	background: url(../assets/images/dinos.png) center center repeat-x; 
+	opacity: 1;
+}
+
+/*********************************************
+ *      About Me
+ *********************************************/
+.reveal .business-card  {
+	  display: inline-block;
+	  width: 250px;
+	  height: 450px;
+	  border-radius: 10px;
+	  color: gray;
+	  font-size: 18px;
+	  border: 1px solid #c0c0c0;
+	  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+	  text-align: left;
+	  line-height: 1.2em;
+	  padding: 1em;
+	  position: relative;
+	  background: white;
+	  font-family:  'Source Sans Pro', Ubuntu, 'Source Sans Pro', 'Myriad Pro', 'Myriad Web Pro', sans-serif;
+}
+
+.reveal .business-card:before {
+    content: '';
+    background: url(../assets/images/biz-logo.svg) no-repeat;    
+    position: absolute;
+    width: 30px;
+    height: 38px;
+    bottom: 1em;
+    left: 1em;
+}
+
+#head-shot {
+	  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+	  border: 1px solid #e0e0e0;
+	  margin: 0;
+	  border: 10px solid white;
+	  margin-left: -200px;
+	  z-index: 100;
+	  -webkit-transform: translate(30px, 280px) rotateZ(12deg);
+	     -moz-transform: translate(30px, 280px) rotateZ(12deg);
+	      -ms-transform: translate(30px, 280px) rotateZ(12deg);
+		      transform: translate(30px, 280px) rotate(12deg);
+}
+
+.reveal .business-card .contact-info {
+      margin-top: 2em; 
+}
+
+.reveal .business-card .contact-info a {
+	  color: gray;
+	  font-size: .8em;
+	  font-weight: normal;
+	  text-shadow: none;
+	  line-height: 1em; 
+}
+
+.reveal .business-card .name {
+	  text-transform: uppercase;
+	  font-weight: bold;
+	  font-size: 18px; 
+}
+
+.reveal .business-card .title, #reveal .business-card .team {
+	  font-size: 14px; 
+}
+
+.reveal a:not(.image) {
+	text-decoration: none;
+	-webkit-transition: all .2s ease;
+	   -moz-transition: all .2s ease;
+	    -ms-transition: all .2s ease;
+	     -o-transition: all .2s ease;
+	        transition: all .2s ease;
+}
+
+/*********************************************
+*         Tim Berners-Lee Quote
+**********************************************/
+.tim-berners-lee .state-background {
+	background: url(../assets/images/tim-berners-lee.jpg) #000 center center no-repeat;
+	background-size: cover;
+	opacity: 1;
+}
+
+.reveal .tbl-quote h3, 
+.reveal .tbl-quote h4 {
+	color: white;
+	font-family: 'Source Sans Pro', Ubuntu, 'Source Sans Pro', 'Myriad Pro', 'Myriad Web Pro', sans-serif;
+	text-shadow: 0 0 5px #000; 
+	letter-spacing: -0.02em;
+}
+.reveal .tbl-quote h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+	line-height: 1.2em;
+	text-align:left;
+	padding: 30px;
+}
+
+.reveal .tbl-quote h4 {
+	font-size: 0.9em;
+	text-align: center;
+	padding-right: 10px;
+}
+
+.tbl-quote {
+	position:absolute; top: 5%; left: -15%; 
+	background: rgba(0, 0, 0, 0.7);
+	box-shadow: 0px 8px 8px rgba(0,0,0,0.2), inset 2px 2px 3px rgba(0,0,0,0.05);
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	margin-left:-1px; margin-right:-8px;
+	padding:30px;
+}
+
+/*********************************************
+ *   Web is defined by community
+ *********************************************/
+.community .state-background {
+	background: url(../assets/images/pitchfork.jpeg) #eee center center;
+	background-size: cover;
+	opacity: 1;
+}
+
+/*********************************************
+ *  Standards are the root of communication
+ *********************************************/
+img.telegraph {
+	box-shadow: 8px 8px 8px rgba(0,0,0,0.5),  2px 2px 3px rgba(200,200,170,1); 
+	-webkit-transform: translate(-260px, 150px) rotate(23deg);
+	   -moz-transform: translate(-260px, 150px) rotate(23deg);
+	    -ms-transform: translate(-260px, 150px) rotate(23deg);
+	        transform: translate(-260px, 150px) rotate(23deg);
+}
+
+img.morse {
+	box-shadow: 8px 8px 8px rgba(0,0,0,0.5),  2px 2px 3px rgba(200,200,170,1); 
+	-webkit-transform: translate(240px, -220px) rotate(-19deg);
+	   -moz-transform: translate(240px, -220px) rotate(-19deg);
+	    -ms-transform: translate(240px, -220px) rotate(-19deg);
+	        transform: translate(240px, -220px) rotate(-19deg);
+}
+
+/*********************************************
+ *    What is a standard?
+ *********************************************/
+.reveal .standard-definition ul li {
+	font-family: "Adelle", georgia, serif;
+	margin-top: 15px;
+}
+
+
+/*********************************************
+ *    Spec phases
+ *********************************************/
+.standard .state-background {
+	background: url(../assets/images/standard.jpg) #eee center center;
+	background-size: cover;
+	opacity: .25;
+}
+
+.standard-header {
+	width: 100%;
+	position: absolute;
+	top: -70%;
+}
+
+.reveal .spec {
+	position: absolute;
+	width: 500px;
+	height: 150px;
+	display: inline-block;
+	float: left;
+	border-radius: 50px;
+	box-shadow: 8px 8px 8px rgba(0,0,0,0.5),  2px 2px 3px rgba(200,200,170,1); 
+}
+
+.spec-phase {
+	width: 500px;
+	height: 500px;
+	border-radius: 100px;
+}
+
+.reveal .spec h4,
+.reveal .spec h5 {
+	font-family:  'Source Sans Pro', Ubuntu, 'Source Sans Pro', 'Myriad Pro', 'Myriad Web Pro', sans-serif;
+	font-weight: bold;
+	letter-spacing: -.07em;
+}
+
+.reveal .spec h4 {
+	font-size: 1.75em;
+	margin-top: 10%;
+}
+
+#spec-draft {
+	background-color: #DADADA;
+	top: 280%;
+	left: -6%;
+}
+
+#spec-cr {
+	background-color: #A8A8A8;
+	top: 720%;
+	left: -6%;
+}
+
+#spec-rec {
+	background-color: #585858;
+	color: #8CCE8F;
+	top: 1160%;
+	left: -6%;
+}
+
+.phase {
+	position: absolute;
+	top: 285%;
+	left: 48%;
+	width: 555px;
+	height: 520px;
+	border-radius: 100px;
+	
+	color: #fff !important;
+	background: rgba(0, 0, 0, 0.8); 
+	box-shadow: 0px 8px 8px rgba(0,0,0,0.2), inset 2px 2px 3px rgba(0,0,0,0.05); 
+	border-radius: 50px; 
+	border: 1px solid rgba(255, 255, 255, 0.2); 
+    
+	margin-left:-8px; margin-right:-8px;
+	text-align:center;
+}
+
+.reveal .phase ul {
+	margin-top: 40px;
+	font-family: 'Source Sans Pro', Ubuntu, 'Source Sans Pro', 'Myriad Pro', 'Myriad Web Pro', sans-serif;
+}
+.reveal .phase ul li {
+	display-list-style: square;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+/*********************************************
+ *       Coverage report
+ *********************************************/
+.coverage-report .state-background {
+	background: url(../assets/images/html-coverage.png) #eee center center;
+	background-size: cover;
+	opacity: 1;
+}
+
+.reveal .coverage h2 {
+	font-size: 1.75em;
+	font-weight: normal;
+	color: #FFaa00;
+	letter-spacing: 0;
+	text-shadow: 0 0 5px #000;
+}
+
+/*********************************************
+ *       Sir Edumund Hillary
+ *********************************************/
+.sir-edmund-hillary .state-background {
+	background: url(../assets/images/sir_edmund_hillary.jpg) #eee center center;
+	background-size: cover;
+	opacity: 1;
+}
+
+.hillary-header {
+	position: absolute;
+	top: -175%;
+}
+
+.reveal .sir-edumund-hillary h1 {
+	position: absolute;
+	margin-top: -15%;
+}
+
+/*********************************************
+ *       More, more more!
+ *********************************************/
+#populate {
+	position: absolute;
+}
+
+#webimg {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	top: 20%;
+	left: 25%;
+	opacity: .4;
+}
+
+.more {
+	position: absolute;
+	top: 220%;
+	left: 22%;
+}
+
+/*********************************************
+ *       A movement is born
+ *********************************************/
+@-webkit-keyframes pan-around {
+	0%   { background-position: 0 top; }
+	50%  { background-position: center top; }
+	100% { background-position: right top; }
+}
+
+.movement .state-background {
+	background: url(../assets/images/dinos.png) repeat-x; 
+	opacity: 1;
+	-webkit-animation-name: pan-around;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: 30; /* infinite;*/
+	-webkit-animation-timing-function: linear;	
+}
+
+.reveal .movement h3 {
+	color: #464646;
+}
+.reveal .movement li {
+	list-style-type: none;
+	font-family: "Adelle", georgia, serif;
+	font-size: 1.2em;
+	font-weight: 400;
+	line-height: 2em;
+}
+
+/*********************************************
+ *       Dance party
+ *********************************************/
+.club .state-background {
+	background: url(../assets/images/party.jpg) #eee center center; 
+	background-size: cover;
+	opacity: .8;
+}
+
+/*********************************************
+ *       Learning
+ *********************************************/
+.learning .state-background {
+	background: url(../assets/images/learning.jpg) #eee center center; 
+	background-size: cover;
+	opacity: .8;
+}
+
+.learning-examples .state-background {
+	background: rgba( 0, 0, 0, 0.6 );
+}
+
+.reveal .expert h6 {
+	font-family:  'Source Sans Pro', Ubuntu, 'Source Sans Pro', 'Myriad Pro', 'Myriad Web Pro', sans-serif;
+	font-size: .55em;
+	line-height: .8em;
+}
+
+#learning-example-1 {
+	-webkit-transform: translate(-28%, -30%) rotate(-9deg);
+	   -moz-transform: translate(-28%, -30%) rotate(-9deg);
+	    -ms-transform: translate(-28%, -30%) rotate(-9deg);
+	        transform: translate(-28%, -30%) rotate(-9deg);
+}
+
+#learning-example-2 {
+	-webkit-transform: translate(-9%, -60%) rotate(9deg);
+	   -moz-transform: translate(-9%, -60%) rotate(9deg);
+	    -ms-transform: translate(-9%, -60%) rotate(9deg);
+	        transform: translate(-9%, -60%) rotate(9deg);
+}
+
+#learning-example-3 {
+	position: absolute;
+	z-index: -1;
+	-webkit-transform: translate(-43%, -145%) rotate(-2deg);
+	   -moz-transform: translate(-43%, -145%) rotate(-2deg);
+	    -ms-transform: translate(-43%, -145%) rotate(-2deg);
+	        transform: translate(-43%, -145%) rotate(-2deg);
+	
+}
+
+#learning-topics,
+#hacking-topics {
+	position: absolute;
+	width: 550px;
+	height: 550px;
+	top: -2%;
+	left: 65%;
+}
+
+/*********************************************
+ *       Hacking
+ *********************************************/
+.hacking .state-background {
+	background: url(../assets/images/binary-code.jpg) #eee center center; 
+	background-size: cover;
+	opacity: .8;
+}
+
+#hacking-1 {
+	-webkit-transform: translate(-35%, -57%) rotate(-9deg);
+	   -moz-transform: translate(-35%, -57%) rotate(-9deg);
+	    -ms-transform: translate(-35%, -57%) rotate(-9deg);
+	        transform: translate(-35%, -57%) rotate(-9deg);
+}
+
+#hacking-2 {
+	-webkit-transform: translate(-12%, -75%) rotate(9deg);
+	   -moz-transform: translate(-12%, -75%) rotate(9deg);
+	    -ms-transform: translate(-12%, -75%) rotate(9deg);
+	        transform: translate(-12%, -75%) rotate(9deg);
+}
+
+#hacking-3 {
+	-webkit-transform: translate(-42%, -105%) rotate(-6deg);
+	   -moz-transform: translate(-42%, -105%) rotate(-6deg);
+	    -ms-transform: translate(-42%, -105%) rotate(-6deg);
+	        transform: translate(-42%, -105%) rotate(-6deg);
+}
+
+/*********************************************
+ *       Contributing
+ *********************************************/
+.contributing .state-background {
+
+}
+
+.results {
+	position: absolute;
+	left: 20%;
+}
+
+/*********************************************
+ *       Building Community
+ *********************************************/
+.building-community .state-background {
+
+}
+
+.reveal .building-community h1 {
+	text-shadow: 0 0 5px #000; 
+	letter-spacing: -.02em;
+	color: #EBEBEB;
+}
+
+#building-community-title {
+	background: rgba(0, 0, 0, 0.95); 
+	box-shadow: 0px 8px 8px rgba(0,0,0,0.2), inset 2px 2px 3px rgba(0,0,0,0.05); 
+	border-radius: 10px; 
+	border: 1px solid rgba(255, 255, 255, 0.2); 
+	margin-left:-8px; margin-right:-8px;
+	text-align:center;
+	font-weight: 500 !important;
+	letter-spacing: 1em !important;
+	padding-top: 15px;
+	position: absolute;
+	width: 60%;
+	top: 200px;
+	left: 23%;
+	z-index: 10;
+
+	-webkit-transform: scale( 1.2 );
+	   -moz-transform: scale( 1.2 );
+	    -ms-transform: scale( 1.2 );
+	        transform: scale( 1.2 );
+}
+
+#beijing-community-1 {
+	opacity: .9;
+	position: absolute;
+	z-index: 3;
+	-webkit-transform: translate(-119%, -37%) rotate(-9deg);
+	   -moz-transform: translate(-119%, -37%) rotate(-9deg);
+	    -ms-transform: translate(-119%, -37%) rotate(-9deg);
+	        transform: translate(-119%, -37%) rotate(-9deg);
+}
+
+#sf-community-1 {
+	opacity: .9;
+	position: absolute;
+	-webkit-transform: translate(-35%, -50%) rotate(9deg);
+	   -moz-transform: translate(-35%, -50%) rotate(9deg);
+	    -ms-transform: translate(-35%, -50%) rotate(9deg);
+	        transform: translate(-35%, -50%) rotate(9deg);
+}
+
+#sf-community-2 {
+	opacity: .9;
+	position: absolute;
+	z-index: 1;
+	-webkit-transform: translate(40%, -35%) rotate(-5deg);
+	   -moz-transform: translate(40%, -35%) rotate(-5deg);
+	    -ms-transform: translate(40%, -35%) rotate(-5deg);
+	        transform: translate(40%, -35%) rotate(-5deg);
+}
+
+#beijing-community-2 {
+	opacity: .9;
+	position: absolute;
+	-webkit-transform: translate(-155%, 65%) rotate(-9deg);
+	   -moz-transform: translate(-155%, 65%) rotate(-9deg);
+	    -ms-transform: translate(-155%, 65%) rotate(-9deg);
+	        transform: translate(-155%, 65%) rotate(-9deg);
+}
+
+#paris-community-1 {
+	opacity: .9;
+	position: absolute;
+	z-index: -1;
+	-webkit-transform: translate(-45%,  145%) rotate(0deg);
+	   -moz-transform: translate(-45%,  145%) rotate(3deg);
+	    -ms-transform: translate(-45%,  145%) rotate(3deg);
+	        transform: translate(-45%,  145%) rotate(3deg);
+}
+
+#paris-community-2 {
+	opacity: .9;
+	position: absolute;
+	-webkit-transform: translate(70%, 65%) rotate(-9deg);
+	   -moz-transform: translate(70%, 65%) rotate(-9deg);
+	    -ms-transform: translate(70%, 65%) rotate(-9deg);
+	        transform: translate(70%, 65%) rotate(-9deg);
+}
+
+/*********************************************
+ *       Better Web
+ *********************************************/
+.building-better-web .state-background {
+	background: url(../assets/images/jump_for_joy.jpg) #eee center center; 
+	background-size: cover;
+	opacity: .7;
+}
+
+/*********************************************
+ *       Play Button
+ *********************************************/
+.ttwfvideo .state-background {
+	background:  url(../assets/images/videobg.jpg) center center no-repeat;
+	background-size: cover;
+	opacity: 1;
+}
+
+.reveal .playbutton img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 60px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+}
+
+.reveal .playbutton a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.95); 
+  -webkit-transition: all 0.2s linear;
+     -moz-transition: all 0.2s linear;
+      -ms-transition: all 0.2s linear;
+       -o-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+}
+
+/*********************************************
+ *       Visit, Subscribe, Follow
+ *********************************************/
+.testtwf-close .state-background {
+	background: url(../assets/images/dinos.png) repeat-x; 
+	opacity: 1;
+}
+
+.reveal .testtwf-close h3{
+	margin-top: 40px;
+}
+
+.reveal .testtwf-close a {
+	font-family: "Adelle", georgia, serif;
+	font-weight: 500;
+}
+
+/*********************************************
+ *       Colophon
+ *********************************************/
+.reveal .colophon ul {
+	margin-left: 30%;
+	font-family:  'Source Sans Pro', Ubuntu, 'Source Sans Pro', 'Myriad Pro', 'Myriad Web Pro', sans-serif;
+	font-size: .5em;
+	line-height: 1.2em;
+
+}
+
+

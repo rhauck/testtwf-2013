@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
 /**
- * Based on the Sky theme for reveal.js.
+ * Based on the sky theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
@@ -37,17 +37,16 @@
  * GLOBAL STYLES
  *********************************************/
 body {
-  background:  #A1A5AB;
-  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #A1A5AB 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #CAE1F5));
+  background:  #e7ebf1;
   background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
-  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
-  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
-  background: radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
-  background-color: #f7fbfc; }
+  background:    -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
+  background:     -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
+  background:      -o-radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
+  background:         radial-gradient(center, circle cover, #f7fbfc 0%, #CAE1F5 100%);
+  background-color: #e7ebf1; }
 
 .reveal {
-  font-family: 'Source Sans Pro', Ubuntu, 'Source Sans Pro', 'Myriad Pro', 'Myriad Web Pro', sans-serif;
+  font-family: "Adelle", georgia, serif;
   font-size: 36px;
   font-weight: 200;
   letter-spacing: -0.02em;
@@ -71,9 +70,8 @@ body {
   font-family: "ChunkFive", georgia, serif;
   font-weight: 100;
   line-height: 0.9em;
-  letter-spacing: -0.08em;
+  letter-spacing: 0;
   text-shadow: none; }
-
 
 .reveal h1 {
   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2); 
@@ -85,8 +83,6 @@ body {
 	color: gray;
 }
 
-
-
 /*********************************************
  * LINKS
  *********************************************/
@@ -94,10 +90,10 @@ body {
   color: #3b759e;
   text-decoration: none;
   -webkit-transition: color 0.15s ease;
-  -moz-transition: color 0.15s ease;
-  -ms-transition: color 0.15s ease;
-  -o-transition: color 0.15s ease;
-  transition: color 0.15s ease; }
+     -moz-transition: color 0.15s ease;
+      -ms-transition: color 0.15s ease;
+       -o-transition: color 0.15s ease;
+          transition: color 0.15s ease; }
 
 .reveal a:not(.image):hover {
   color: #74a7cb;
@@ -108,28 +104,6 @@ body {
   color: #fff;
   background: #264c66; }
 
-/*********************************************
- * IMAGES
- *********************************************/
-.reveal .playbutton img {
-  margin: 15px 0px;
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: 60px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear; }
-
-.reveal .playbutton a:hover img {
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
-
-.reveal .full-slide section img {
-	border-radius: 100px;
-
-}
 
 /*********************************************
  * NAVIGATION CONTROLS
