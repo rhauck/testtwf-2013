@@ -13,7 +13,7 @@
 
         <link rel="stylesheet" href="css/reveal.css">
         <link rel="stylesheet" href="css/testtwf.css">
-	    <link rel="stylesheet" href="css/theme/testtwf-theme.css" id="theme">
+        <link rel="stylesheet" href="css/theme/testtwf-theme.css" id="theme">
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 		
 		<script type="text/javascript" src="js/prefixfree.js" defer></script>
@@ -32,6 +32,15 @@
     			        <h3>Better tests for a better web</h3>
     			        <h5>SF HTML5 Meetup - April 25, 2013</h5>
     			    </div>
+    			    
+    			    <aside class="notes">
+    			        <ul>
+    			            <li>Before I introduce myself, I'd like to do a show of hands</li>
+    			            <li>How many have heard of TestTWF?</li>
+    			            <li>How many have been to one?</li>
+    			            <li>Cool! I'll tell you a bit about it and how you can get involved</li>
+    			        </ul>
+    			    </aside>
     			</section>
 
                 <section class="home">
@@ -51,6 +60,13 @@
                     <div style="display:inline-block">
                         <img id="head-shot" src="assets/images/rebecca_hauck_375x400.jpg" width="200" height="215"/>
                     </div>
+                    
+                    <aside class="notes">
+    			        <ul>
+    			            <li>Work here in the SF office</li>
+    			            <li>I've been very involved with TestTWF since the beginning</li>
+    			        </ul>
+    			    </aside>
                 </section>
                 
 				<section data-state="tim-berners-lee">
@@ -65,14 +81,28 @@
                          would happen to it next..."
                         </h3>
                         <h4>—Tim Berners-Lee</h4>
-                        
                     </div>
+                    
+                    <aside class="notes">
+    			        <ul>
+    			            <li>I'd like to start with a quote from TBL because it's at the heart of the movement</li>
+    			            <li>(read quote)</li>
+    			            <li>His vision for the web was not only technological, but evolutionary</li>
+    			        </ul>
+    			    </aside>
 				</section>
 				
             	<section data-state="community">
 					<div class="fragment inverted vignetted">
 					    <h2 class="white">The web is defined by the community</h2>
 				    </div>
+				    
+				    <aside class="notes">
+    			        <ul>
+    			            <li>And nearly 25 years later, the web has indeed evolved as he envisioned it</li>
+    			            <li>Now, the Web is defined by community</li>
+    			        </ul>
+    			    </aside>
 				</section>
 				
 				<section data-state="starburst-page">
@@ -174,6 +204,8 @@
 				    <li class="fragment swipe-left">First event: June 2012, San Francisco</li>
 				    <li class="fragment swipe-left">2012-2013: Beijing, Paris, Sydney, Seattle</li>
 				    <li class="fragment swipe-up">Upcoming: Tokyo, Shanghai, Shenzhen</li>
+				    <li class="fragment swipe-left">Hosts &amp; Sponsors: </li> 
+				    <li class="fragment swipe-left">Adobe, Google, Microsoft, Facebook, and more</li>
 				    <li class="fragment roll-in">More coming soon!</li>
 				</section>
 				<section data-state="club">
@@ -203,7 +235,7 @@
     			            <ul>
     			                <li>How to Read a W3C Spec</li>
     			                <li>Testing with testharness.js</li>
-    			                <li>How to Write a W3C Reftest</li>
+    			                <li class="fragment highlight-blue">How to Write a W3C Reftest</li>
     			                <li>Filing the Best Bugs</li>
     			                <li>The CSS Testing Framework</li>
     			                <li>The current testing status of your favorite spec!</li>
@@ -211,7 +243,196 @@
     			            </ul>
     			        </div>
     			    </section>
-    			</section>
+    			    <section data-state="reftest-excerpt">
+    			        <div class="reftest" style="margin-left: 20px;">
+			                <h1>How to write a Reftest</h1>
+			                <h2>(Excerpt)</h2>
+			                <img src="assets/images/w3cLogo.png">
+			                <br /><br />
+			                <p style="font-size: .8em;">Full tutorial at <a href="http://testthewebforward.org">http://testthewebforward.org</a> 
+			                <br/>under 'Resources'</p>
+			            </div>
+			        </section>
+			        
+			        <section data-state="reftest-excerpt">
+			            <div class="reftest">
+			                <h1 style="margin-right: 130px;">Reftest Overview</h1>
+			                <ul style="margin-left: 10px;">
+			                    <li class="fragment">Two files: Test file + Reference file</li>
+        					    <li class="fragment">Test file uses the feature you're testing</li>
+        					    <li class="fragment">Reference file is an exact visual match without using the feature you're testing</li>
+        					    <li class="fragment">Self-describing (works both manually and with automation)</li>
+        					    <li class="fragment"> Cross-browser & cross-platform</li>
+        				    </ul>
+        				</div>
+			        </section>
+			        
+			        <section data-state="reftest-excerpt">
+			              <div class="reftest" style="top: -100px;">
+			                  <h2 style="margin-right: 20px">Sample Test Case</h2>
+			                  <p>
+                  				    Basic test for the transform property<br/> 
+                  				    described in the CSS3 Transforms spec <br />
+                  				    using the <code>translate()</code> function
+                  				</p>
+                  				<br />
+                  				<img src="assets/images/specAssertion.png">
+              		      </div>
+			        </section>
+			        
+			        <section data-state="reftest-excerpt">
+			              <div class="reftest" style="top: -100px; left: -10px;">
+			                <h2>Completed Reftest</h2>
+          				    <img src="assets/images/001a.png">
+              			    <img src="assets/images/001b.png">
+              			  </div>
+			        </section>
+			         
+          			<section data-state="reftest-excerpt">
+          			    <div class="reftest" style="top: -100px;">
+          			        <h2 style="margin-left: 200px;">Test Metadata</h2>
+                    		<pre>
+                    	    <code class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;CSS Transforms Test: transform property with translate function&lt;/title&gt;
+&lt;link rel="author" title="Your Name" href="mailto:youremail@address.com"&gt;
+&lt;link rel="help" href="http://www.w3.org/TR/css3-transforms/#transform-property"&gt;
+&lt;link rel="help" href="http://www.w3.org/TR/css3-transforms/#two-d-transform-functions"&gt
+&lt;meta name="assert" 
+  content="This transform moves the element by 100 pixels in both the X and Y directions."&gt;
+  . . .
+                            </code>
+        				    </pre>
+          			    </div>
+          			</section>
+          			
+          			<section data-state="reftest-excerpt">
+                        <div class="reftest" style="top: -100px;">
+          			    <h2 style="margin-right: 60px;">Test File</h2>
+          			    <p>Add an element with the transform applied</p>
+          			    <pre style="width: 700px; left: 55px;">
+        			    <code class="java">
+   &lt;style type="text/css"&gt;
+       .greenSquare {
+           position: absolute;
+           background: green;
+           top: 0;
+           left: 0;
+           width: 100px;
+           height: 100px;
+           transform: translate(100px, 100px);
+       }
+    . . .
+   &lt;/style&gt;
+                            </code>
+        				    </pre>
+          			    </div>
+          			</section>
+          			
+          			<section data-state="reftest-excerpt">
+                        <div class="reftest" style="top: -100px;">
+          			    <h2>Reference File</h2>
+          			    <p>Add an element that renders identically</p>
+          			    <pre style="width: 700px; left: 35px;">
+        			    <code class="java">
+           &lt;style type="text/css"&gt;
+               .greenSquare {
+                   position: absolute;
+                   background: green;
+                   top: 100px;
+                   left: 100px;
+                   width: 100px;
+                   height: 100px;
+               }
+            . . .
+           &lt;/style&gt;
+                            </code>
+        				    </pre>
+          			    </div>
+          			</section>
+          			
+          			<section data-state="reftest-excerpt">
+                        <div class="reftest" style="top: -100px;">
+          			    <h2 style="margin-right: 80px;">Test File</h2>
+          			    <p style="margin-right: 20px;">Add element only visible when the test fails</p>
+    			         <pre style="width: 700px; left: 55px;">
+        				    <code class="java">
+            &lt;style type="text/css"&gt;
+                . . .
+                .redSquare</span> {
+                    position: absolute;
+                    background: red;
+                    top: 101px;
+                    left: 101px;
+                    width: 98px;
+                    height: 98px;
+                }
+            &lt;/style&gt;    
+        				    </code>
+        				    </pre>
+     			        </div>
+          			</section>
+          			
+          			<section data-state="reftest-excerpt">
+              			<div class="reftest" style="top: -100px;">
+          			        <h2 style="margin-right: 25px;">Test &amp; Reference File</h2>
+                    		<p>Simple statement of how the page renders when the test passes</p>
+                            <pre style="width: 1000px; left: -100px;">
+                    	    <code class="html">
+  &lt;body&gt;
+     &lt;p&gt;The test passes if there is a green square and no red.&lt;/p&gt;
+     . . .
+  &lt;/body&gt;
+                			</code>
+                			</pre>
+                    	</div>
+                    </section>
+                    
+                    <section data-state="reftest-excerpt">
+              			<div class="reftest" style="top: -100px;">
+          			        <h2 style="margin-left: 100px;">Test File</h2>
+                    		<p style="margin-left: 110px;">Add the red &amp; green elements</p>
+                            <pre style="width: 1000px; left: -100px;">
+                    	    <code class="html">
+  &lt;body&gt;
+     &lt;p&gt;The test passes if there is a green square and no red.&lt;/p&gt;
+     &lt;div class="redSquare"&gt;&lt;/div&gt;
+     &lt;div class="greenSquare"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+                    	    </code>
+                    	    </pre>
+                    	</div>
+                    </section>
+                    <section data-state="reftest-excerpt">
+                		<div class="reftest" style="top: -100px;">
+            			    <h2 style="margin-left: 180px;">Reference File</h2>
+                      		<p style="margin-left: 180px;">Add the green element</p>
+                            <pre style="width: 1000px; left: -100px;">
+                      	    <code class="html">
+  &lt;body&gt;
+      &lt;p&gt;The test passes if there is a green square and no red.&lt;/p&gt;
+      &lt;div class="greenSquare"&gt;&lt;/div&gt;
+  &lt;/body&gt;
+                      	    </code>
+                      	    </pre>
+                      	</div>
+                      </section>
+                      
+                      	<section data-state="reftest-excerpt">
+  			             <div class="reftest" style="top: -150px; left: -10px;">
+   			                <h2>Passing test</h2>
+                            <img src="assets/images/passingRefTest.png">
+            			    
+            			    <h2 style="margin-top: 20px;">Failing test</h2>
+                            <img src="assets/images/failingRefTest.png">
+            			    </div>
+            			</section>
+            		
+
+         
+         		</section>
     			<section>
     			    <section data-state="hacking">
     			        <div class="inverted vignetted" style="margin-left: 23%; width: 50%">
@@ -247,7 +468,7 @@
     			    <h1>Contributing</h1>
     				<div class="results topics">
     				    <ul>
-    				        <li class="fragment swipe-up">Over 700 new tests written</li>
+    				        <li class="fragment swipe-up">Over 1000 new tests written</li>
     				        <li class="fragment swipe-up">Interoperability bugs found at each event</li>
     				        <li class="fragment swipe-up">Several spec bugs also found</li>
     				        <li class="fragment swipe-up">Side hacking on test infrastructure</li>
@@ -282,11 +503,16 @@
                     </div>
                 </section>
                 
-                <!--
                 <section>
-                  Add call to action slide here
+                  <h1>Call to Action!</h1>
+                  <ul style="font-size: 1.5em; line-height: 1.5em;">
+                      <li>Join the movement!</li>
+                      <li>Come to an event!</li>
+                      <li>Write tests!</li>
+                      <li>Become a Sponsor!</li>
+                      <li>Host your own!</li>
+                  </ul>
                 </section>
-                -->
                 
                	<section data-state="testtwf-close" class="testtwf-close">
 				    <h3>Visit</h3>

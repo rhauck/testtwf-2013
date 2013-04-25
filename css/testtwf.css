@@ -358,8 +358,8 @@ img.morse {
  *********************************************/
 @-webkit-keyframes pan-around {
 	0%   { background-position: 0 top; }
-	50%  { background-position: center top; }
-	100% { background-position: right top; }
+	50%  { background-position: 229px top; }
+	100% { background-position: 458px top; }
 }
 
 .movement .state-background {
@@ -367,7 +367,7 @@ img.morse {
 	opacity: 1;
 	-webkit-animation-name: pan-around;
 	-webkit-animation-duration: 30s;
-	-webkit-animation-iteration-count: 30; /* infinite;*/
+	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;	
 }
 
@@ -394,6 +394,8 @@ img.morse {
 /*********************************************
  *       Learning
  *********************************************/
+
+/***** PART 1 *****/
 .learning .state-background {
 	background: url(../assets/images/learning.jpg) #eee center center; 
 	background-size: cover;
@@ -404,6 +406,7 @@ img.morse {
 	background: rgba( 0, 0, 0, 0.6 );
 }
 
+/***** PART 2 *****/
 .reveal .expert h6 {
 	font-family:  'Source Sans Pro', Ubuntu, 'Source Sans Pro', 'Myriad Pro', 'Myriad Web Pro', sans-serif;
 	font-size: .55em;
@@ -442,6 +445,53 @@ img.morse {
 	top: -2%;
 	left: 65%;
 }
+
+/***** PART 3, 4, 5 *****/
+.reftest-excerpt .state-background {
+	background: url(../assets/images/reftestbg.png) #eee center center; 
+	background-size: cover;
+	opacity: 1;
+}
+
+.reftest {
+	position: absolute;
+	left: 10%;
+	font-family: sans-serif;
+	font-size: 1.2em;
+	text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+	color: white;
+}
+
+.reveal .reftest h1,
+.reveal .reftest h2,
+.reveal .reftest h3 {
+	font-family: 'League Gothic', sans-serif;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+	color: white;
+}
+
+.reveal .reftest ul,
+.reveal .reftest p {
+	font-family: sans-serif;
+	font-size: 1.2em;
+	text-shadow: 0px 0px 6px rgba(0,0,0,0.2);
+	color: white;
+}
+
+.reveal .reftest li {
+	line-height: 1.1em;
+	margin-top: 25px;
+}
+
+.reveal .reftest pre {
+	margin-right: 150px;;
+	width: 1300px;
+	font-size: 18pt;
+	line-height: 1.3em;
+}
+
+
 
 /*********************************************
  *       Hacking
