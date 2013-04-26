@@ -357,9 +357,9 @@ img.morse {
  *       A movement is born
  *********************************************/
 @-webkit-keyframes pan-around {
-	0%   { background-position: 0 top; }
-	50%  { background-position: 229px top; }
-	100% { background-position: 458px top; }
+	/*0%   { background-position: 0 top; }
+	50%  { background-position: 1000px top; }*/
+	100% { background-position: 1000px top; }
 }
 
 .movement .state-background {

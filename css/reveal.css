@@ -328,6 +328,7 @@ body {
 	max-height: 400px;
 	word-wrap: normal;
 	background-color: black;
+	overflow: hidden;
 }
 
 .reveal table th,
